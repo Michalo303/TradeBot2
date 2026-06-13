@@ -1,0 +1,30 @@
+# Secrets
+.env
+AGENTS.md
+user_data/config/config.private.json
+
+# Market data and logs (large, reproducible)
+user_data/data/
+user_data/lob_data/
+user_data/logs/
+user_data/backtest_results/
+
+# Runtime artefacts
+user_data/*.sqlite
+user_data/*.sqlite-shm
+user_data/*.sqlite-wal
+user_data/*.json.gz
+
+# Private Hermes library and curated notes must remain outside git.
+**/hermes_books/raw/
+**/hermes_books/index/
+**/hermes_books/extracted_notes/
+**/hermes_books/**/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
